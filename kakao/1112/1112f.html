@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kakao</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // 피보나치수열
+    let a = 0
+    let b = 1
+    while(true){
+        let c = a + b
+        document.write("c : " + c + "<br>")
+        a = b
+        document.write("a : " + a + "<br>")
+        b = c
+        document.write("b : " + b + "<br>")
+        document.write("-".repeat(20)+"<br>")
+        if(c >= 10000){
+            document.write("최종값 : " + c)
+            break
+        }
+    }
+</script>
+</html>

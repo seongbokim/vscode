@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    td, th {
+        border: 1px solid black;
+        text-align: center;
+    }
+    table {
+        border-collapse: collapse;
+    }
+</style>
+<body>
+    <h1>사용자 정보</h1>
+    <table id="usertable">
+    <thead>
+        <tr><th style="width: 100px;">이름</th><th style="width: 50px;">성별</th><th style="width: 200px;">모바일</th></tr>
+    </thead>
+    <tbody></tbody>
+    </table>
+</body>
+<script>
+    let s = []
+    let h = 0
+    while(h < 3){
+        let n = prompt("이름을 입력하세요")
+        if(n == "" || n == null){break}
+        let g = prompt("성별을 입력하세요")
+        let m = prompt("전화번호를 입력하세요")
+        s.push({n, g, m})
+        h++
+    }
+    let tbody = document.querySelector("#usertable tbody")
+    tbody.innerHTML = s.map(user => `<tr><td>${user.n}</td><td>${user.g}</td><td>${user.m}</td></tr>`).join("")
+</script>
+</html>

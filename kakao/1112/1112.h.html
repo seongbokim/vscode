@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kakao</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // 오늘 기준으로 1000일후가 언젠지 찾기.
+    let today = new Date()
+    let year = today.getFullYear()
+    let month = today.getMonth()
+    let date = today.getDate()
+    let hour = today.getHours()
+    let minute = today.getMinutes()
+    let second = today.getSeconds()
+    document.write(year + "-" + (month+1) + "- " + date + "-" + hour + "-" + minute + "-" + second + "<br>") 
+
+    let someday = new Date()
+    someday.setFullYear(2026)
+    someday.setMonth(1)
+    someday.setDate(26)
+    someday.setHours(12)
+    someday.setMinutes(13)
+    someday.setSeconds(24)
+    document.write(someday.getFullYear() + "-" + someday.getMonth() + "-" + someday.getDate() + "-" + someday.getHours() + "-" + someday.getMinutes() + "-" + someday.getSeconds())
+</script>
+</html>

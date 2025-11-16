@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let today = new Date()
+    let year = today.getFullYear()
+    let month = today.getMonth()
+    let date = today.getDate()
+    let hour = today.getHours()
+    let minute = today.getMinutes()
+    let second = today.getSeconds()
+    document.write(year + "-" + (month+1) + "- " + date + "-" 
+    + hour + "-" + minute + "-" + second + "<br>")
+    // document.write((month+1) + "월")
+    // document.write(date + "일")
+    // document.write(hour + "시")
+    // document.write(minute + "분")
+    // document.write(second + "초")
+    let someday = new Date()
+    someday.setYear(2026)
+    someday.setMonth(1)
+    someday.setDate(26)
+    someday.setHours(12)
+    someday.setMinutes(13)
+    someday.setSeconds(24)
+    document.write(someday.getFullYear() + "-" + someday.getMonth() + "-" + someday.getDate() 
+    + "-" + someday.getHours() + "-" + someday.getMinutes() + "-" + someday.getSeconds() + "<br>")
+</script>
+</html>

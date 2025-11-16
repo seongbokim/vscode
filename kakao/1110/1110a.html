@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table drawing!</title>
+    <link rel="stylelsheet" href="my.css">
+</head>
+<style>
+    td, caption {
+        border: 1px solid black;
+    }
+    th {
+        border: 1px solid yellow;
+    }
+    table {
+        border-collapse: collapse;
+    }
+</style>
+<body>
+    <table>
+    <caption>테이블 보이기</caption>
+    <thead style="background-color: black; color: white;">
+        <tr><th style="width: 10opx;">이름</th><th style="width: 150px;">모바일</th><th style="width: 50px;">성별</th></tr>
+        <!-- 수평정렬 : text-align, 수직정렬 : vertical-align -->
+        <!-- align : 오른쪽(right), 왼쪽(left), 중앙(center)-->
+        <!-- valign : 위(top), 중앙(middle), 아래(bottom)-->
+        <!-- 셀 병합 : colspan, 위아래 병합 : rowspan -->
+    </thead>    
+    <tbody>
+        <tr><td>John</td><td>44445555</td><td>남성</td></tr>
+        <tr><td>Johanson</td><td>48684545</td><td>여성</td></tr>
+        <tr><td>Stallon</td><td>77778888</td><td>-</td></tr>
+    </tbody>
+    </table>
+</body>
+<script>
+    a = "Hello World\nSay My Name"
+    b = "Hello World<br>Say My Name"
+    document.write(b)
+    alert(a)
+    console.log(a)
+</script>
+</html>

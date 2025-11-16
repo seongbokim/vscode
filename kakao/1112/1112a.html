@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kakao</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // 소수구하기
+    let n = 4
+    let max = 1000
+    while(n <= max){
+        let m = 2
+        while(m < n){
+            if(n % m == 0){
+                break
+            }m++  
+        }m==n && document.write(n + "는 소수입니다<br>")
+        n++
+    }
+</script>
+</html>

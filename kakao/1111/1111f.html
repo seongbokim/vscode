@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let student = new Array(5).fill(0)
+    for(let n in student) {
+	    student[n]=parseInt(prompt("점수"))
+    }
+    let total = 0
+    for(let x of student) {
+	    total = total + x
+    }
+    document.write(total/student.length)
+</script>
+</html>

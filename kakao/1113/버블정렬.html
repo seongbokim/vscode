@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kakao</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // 버블정렬알고리즘
+    let n = ['Hello', 'World', 'Good', 'Mornig', 'Vietnam', 'Jurasic', 'Pork']
+
+    for(let i = 0; i < n.length-1; i++){
+        for(let j = 0; j < n.length-1-i; j++){
+            if(n[j] > n[j+1]){
+                let temp = n[j]
+                n[j] = n[j+1]
+                n[j+1] = temp 
+            }
+        }
+    } document.write(n)
+</script>
+</html>

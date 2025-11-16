@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2차방정식 근 구하기</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // 2차방정식 근 구하기
+    let a = parseInt(prompt("a의값을 입력해주세요"))
+    let b = parseInt(prompt("b의값을 입력해주세요"))
+    let c = parseInt(prompt("c의값을 입력해주세요"))
+    document.write("a : ", a, ", b : ", b, ", c : ", c + "<br>")
+    let n = (b * b) - (4 * a * c)
+    if(n<0){
+        document.write("오류")   
+    }
+    else{
+        let x1 = (-b + Math.sqrt(n)) / (2 * a)
+        let x2 = (-b - Math.sqrt(n)) / (2 * a)
+        document.write("x1 : " + x1, "<br>x2 : " + x2)
+    }
+</script>
+</html>
