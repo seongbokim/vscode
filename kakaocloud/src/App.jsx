@@ -1,11 +1,8 @@
 import "./App.css";
-import Rect from "./Rect.jsx";
+import Plus from "./1117/1117a.jsx";
 
-export default function App() {
-  return (
-    <div>
-      <Rect color="red" />
-      <Rect color="blue" />
-    </div>
-  );
+function App() {
+  return <Plus />;
 }
+
+export default App;
