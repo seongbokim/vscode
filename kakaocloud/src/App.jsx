@@ -1,8 +1,8 @@
 import "./App.css";
-import Counter from "./1118/1118b.jsx";
+import Plus from "./1118/1118c.jsx";
 
 function App() {
-  return <Counter />;
+  return <Plus />;
 }
 
 export default App;
