@@ -1,8 +1,8 @@
 import "./App.css";
-import User from "./1117/1117h.jsx";
+import Counter from "./1118/1118b.jsx";
 
 function App() {
-  return <User />;
+  return <Counter />;
 }
 
 export default App;
