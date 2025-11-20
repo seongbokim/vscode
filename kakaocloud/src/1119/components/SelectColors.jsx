@@ -14,7 +14,6 @@ const colors = [
 export default function SelectColors() {
   return (
     <div>
-      <h2>색상을 선택하세요.</h2>
       <ColorConsumer>
         {({ actions }) => (
           <div style={{ display: "flex" }}>

@@ -21,6 +21,7 @@ export default function ColorBox() {
           background: state.color,
         }}
       />
+      <hr />
       <button onClick={goBack}>뒤로가기</button>
     </>
   );
