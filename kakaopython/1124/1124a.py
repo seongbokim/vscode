@@ -7,3 +7,4 @@ weather = a[8:]
 print(year)
 print(day)
 print(weather)
+
