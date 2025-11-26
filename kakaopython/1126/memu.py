@@ -51,8 +51,8 @@ def updateMenu(filename):
         price = int(price)
         a.append([manu, price])
     print("현재 메뉴")
-    for idx, (name, price) in enumerate(a):
-        print(f"{idx}, 메뉴: {name}, 가격: {price}")
+    for idx, (manu, price) in enumerate(a):
+        print(f"{idx}, 메뉴: {manu}, 가격: {price}")
     idx = int(input("수정할 번호를 선택해주세요: "))
     if idx < 0 or idx >= len(a):
         return
@@ -80,8 +80,8 @@ def deleteMenu(filename):
         price = int(price)
         a.append([manu, price])
     print("현재 메뉴")
-    for idx, (name, price) in enumerate(a):
-        print(f"{idx}, 메뉴: {name}, 가격: {price}")
+    for idx, (manu, price) in enumerate(a):
+        print(f"{idx}, 메뉴: {manu}, 가격: {price}")
     idx = int(input("삭제할 번호를 선택해주세요: "))
     if idx < 0 or idx >= len(a):
         return
@@ -104,8 +104,8 @@ def orderMenu(filename):
         price = int(price)
         a.append([manu, price])
     print("현재 메뉴")
-    for idx, (name, price) in enumerate(a):
-        print(f"{idx}, 메뉴: {name}, 가격: {price}")
+    for idx, (manu, price) in enumerate(a):
+        print(f"{idx}, 메뉴: {manu}, 가격: {price}")
     idx = int(input("주문하실 번호를 선택해주세요: "))
     if idx < 0 or idx >= len(a):
         return
