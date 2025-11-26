@@ -4,7 +4,7 @@ def makeMenu(filename):
         menu = input("메뉴 : ")
         if not menu: break
         price = int(input("가격 : "))
-        f.write(menu + ",")
+        f.write(menu + ", ")
         if price:
             f.write(str(price) + "\n")
         else:
@@ -17,7 +17,7 @@ def addMenu(filename):
         menu = input("새메뉴 : ")
         if not menu: break
         price = int(input("가격 : "))
-        f.write(menu + ",")
+        f.write(menu + ", ")
         if price:
             f.write(str(price) + "\n")
         else:
