@@ -1,5 +1,4 @@
 from memu import *
-from menu import *
 
 f = "./menu.txt"
 while True:
@@ -21,8 +20,7 @@ while True:
     elif a == "O":
         orderMenu(f)
     elif a == "S":
-        call = Menu()
-        call.display()
+        readMenu(f)
     elif a == "X":
         print("프로그램 종료")
         break
