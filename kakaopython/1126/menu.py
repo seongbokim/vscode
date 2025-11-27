@@ -1,12 +1,11 @@
 class Menu:
   def __init__(self):
-    self.fname = "menu.txt"
+    self.f = "menu.txt"
     self.items = []
-    f = open(self.fname, 'r')
+    f = open(self.f, 'r')
     menulist = f.readlines()
     f.close()
     for line in menulist:
-      ar = line.split(",")
       if not line:
         continue
       menu, price = line.split(",")
@@ -40,18 +39,18 @@ class Menu:
     idx = int(input("수정할 번호를 선택하세요: "))
     if idx < 0 or idx >= len(self.items):
         return
-    updateManu = input("변경할 메뉴 이름: ")
-    updatePrice = input("변경할 가격: ")
-    if updateManu:
-        self.items[idx][0] = updateManu
-    if updatePrice:
-        self.items[idx][1] = int(updatePrice)
+    manu = input("변경할 메뉴 이름: ")
+    price = input("변경할 가격: ")
+    if manu:
+        self.items[idx][0] = manu
+    if price:
+        self.items[idx][1] = int(price)
     self.save()
     print("수정완료")
     self.display()
 
   def save(self):
-    f = open(self.fname, 'w')
+    f = open(self.f, 'w')
     for x in self.items:
       f.write(f"{x[0]},{x[1]}\n")
     f.close()

@@ -1,4 +1,3 @@
-from memu import *
 from menu import *
 
 call = Menu()
