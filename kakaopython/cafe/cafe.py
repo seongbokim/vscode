@@ -47,4 +47,3 @@ while True:
     elif a == "X":
         print("프로그램 종료")
         break
-
